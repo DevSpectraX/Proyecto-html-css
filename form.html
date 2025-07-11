@@ -32,56 +32,38 @@
     </header>
 
     <main>
-      <form action="" target="_self" name="formulario-presupuesto">
-        <!DOCTYPE html>
-        <html lang="es">
-          <head>
-            <meta charset="UTF-8" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
-            />
-            <title>Formulario de Presupuesto</title>
-          </head>
-          <body class="form">
-            <form
-              name="formulario-presupuesto"
-              target="_self"
-              enctype="application/x-www-form-urlencoded"
-            >
-              <h2>Solicita tu Presupuesto</h2>
+      <form
+        class="form"
+        action=""
+        name="formulario-presupuesto"
+        target="_self"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <h2>Solicita tu Presupuesto</h2>
 
-              <fieldset>
-                <legend>Informacion personal</legend>
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required />
+        <fieldset>
+          <legend>Informacion personal</legend>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required />
 
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required />
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="telefono">Teléfono de contacto</label>
-                <input type="tel" id="telefono" name="telefono" />
-              </fieldset>
-              <fieldset>
-                <legend>Servicios</legend>
-                <input
-                  list="servicios"
-                  for="servicio"
-                  placeholder="Elegir servicio"
-                />
-                <datalist id="servicios">
-                  <option value="Limpieza basica"></option>
-                  <option value="Limpieza Detail"></option>
-                  <option value="Limpieza integral"></option>
-                  <option value="Pulido del vehiculo"></option>
-                </datalist>
-              </fieldset>
+          <label for="telefono">Teléfono de contacto</label>
+          <input type="tel" id="telefono" name="telefono" />
+        </fieldset>
+        <fieldset>
+          <legend>Servicios</legend>
+          <input list="servicios" placeholder="Elegir servicio" />
+          <datalist id="servicios">
+            <option value="Limpieza basica"></option>
+            <option value="Limpieza Detail"></option>
+            <option value="Limpieza integral"></option>
+            <option value="Pulido del vehiculo"></option>
+          </datalist>
+        </fieldset>
 
-              <input class="btn"
-              type="submit"value="Solicitar Presupuesto" />
-            </form>
-          </body>
-        </html>
+        <input class="btn" type="submit" value="Solicitar Presupuesto" />
       </form>
     </main>
   </body>
